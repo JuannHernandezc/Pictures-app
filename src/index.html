@@ -33,18 +33,28 @@
     <!-- Imports styles -->
 
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/navStyles.css" />
+    <link rel="stylesheet" href="../css/mainStyles.css" />
 
     <title>All</title>
   </head>
   <body>
     <header class="header">
       <nav class="header__nav">
-        <div class="container-bar">
-          <i class="fa-solid fa-bars"></i>
+        <div class="container-bar" id="container-responsive">
+          <i class="fa-solid fa-bars" id="btn-responsive"></i>
         </div>
-        <div class="container-nav">
+        <div class="container-close" id="container-close">
+          <i class="fa-solid fa-circle-xmark" id="btn-close"></i>
+        </div>
+        <div class="container-nav" id="container-navigation">
           <ul>
+            <li>
+              <img
+                src="https://res.cloudinary.com/danhzm8qb/image/upload/v1653534169/Pictures-app/Pictures_APp_2_1_a6vb8i.png"
+                alt="Logo Pictures App"
+              />
+            </li>
             <li><a href="#">All</a></li>
             <li><a href="#">Branding</a></li>
             <li><a href="#">Web</a></li>
@@ -54,7 +64,21 @@
         </div>
       </nav>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="main__banner">
+        <div class="main__bannner__text">
+          <h2>All the images you can find</h2>
+        </div>
+      </section>
+      <h3>Random Pictures</h3>
+      <section class="main__grid" id="main__grid"></section>
+      <div class="container-btn">
+        <button class="btn-more" id="seeMore">Show me more</button>
+      </div>
+    </main>
     <footer class="footer"></footer>
+
+    <!-- Imports JavaScript -->
+    <script src="../js/index.js"></script>
   </body>
 </html>

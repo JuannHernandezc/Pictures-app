@@ -1,0 +1,11 @@
+{
+  "name": "pictures-app",
+  "version": "1.0.0",
+  "description": "Web App that allow see Pictures about all topics ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Nicola Hernandez Chavez",
+  "license": "ISC"
+}

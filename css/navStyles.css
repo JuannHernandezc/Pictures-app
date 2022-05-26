@@ -1,0 +1,141 @@
+:root {
+    --main-color: #fc758c;
+    --secondary-color: #ffa4b3;
+    --third-color: white;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    min-width: 320px;
+}
+
+.header__nav {
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+.container-bar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.container-bar i {
+    font-size: 25px;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.container-bar i:hover {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    transition: .7s;
+}
+
+.container-nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container-close {
+    display: none;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-close i {
+    font-size: 20px;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.container-close i:hover {
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    transition: .7s;
+}
+
+.container-nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.container-nav ul li {
+    width: 100%;
+}
+.container-nav ul li:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-nav ul li img{
+    width: 100px;
+    padding: 2rem;
+}
+
+.container-nav ul li:nth-child(-n+6) {
+    border-bottom: 1px solid var(--third-color);
+}
+
+.container-nav ul li a {
+    color: var(--third-color);
+    display: block;
+    font-size: 16px;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container-nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 769px) {
+
+    .container-bar {
+        display: none;
+    }
+
+    .container-nav {
+        display: flex;
+    }
+
+    .container-nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-nav ul li {
+        margin: .5rem 1rem;
+    }
+
+    .container-nav ul li img{
+        padding: 0;
+    }
+
+    .container-nav ul li a {
+        font-size: 13px;
+    }
+
+    .container-nav ul li a:hover {
+        border-radius: 2rem;
+    }
+
+    .container-nav ul li:nth-child(-n+6) {
+        border-bottom: none;
+    }
+}
