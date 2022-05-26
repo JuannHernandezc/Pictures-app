@@ -20,7 +20,7 @@ const executeReponsive = () => {
 
 const getLoad = () => {
   const url =
-    "https://api.unsplash.com/photos/random?client_id=ELpB62mPz2TxGivCxc_AE-Nlsd0xLD_DMW6_VwDOR_c&count=12";
+    "https://api.unsplash.com/photos/random?client_id=ELpB62mPz2TxGivCxc_AE-Nlsd0xLD_DMW6_VwDOR_c&count=20";
   const fragment = document.createDocumentFragment();
   const mainGrid = document.getElementById("main__grid");
   const btnSeeMore = document.getElementById("seeMore");
@@ -31,7 +31,7 @@ const getLoad = () => {
       const data = answer.json();
       data.then((result) => {
         for (let i = 0; i < result.length; i++) {
-          if (i < 6) {
+          if (i < 10) {
             const div = document.createElement("div");
             const img = document.createElement("img");
             img.src = result[i].urls.regular;
